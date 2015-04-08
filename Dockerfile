@@ -1,6 +1,5 @@
-# use 12.04 precise (https://github.com/docker/docker/issues/5899)
-FROM phusion/baseimage:0.9.9
-MAINTAINER Justin Ellison <justin@techadvise.com>
+FROM hypriot/rpi-node:0.12.0
+MAINTAINER Marcel Steinbach <marcelst@me.com>
 
 # Set correct environment variables.
 ENV DEBIAN_FRONTEND noninteractive

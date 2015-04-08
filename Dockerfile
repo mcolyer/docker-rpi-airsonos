@@ -8,15 +8,20 @@ ENV HOME /root
 
 ADD . /build
 
-RUN /build/prepare.sh && \
-	/build/install.sh && \
-	/build/cleanup.sh
+ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+RUN /build/prepare.sh 
+RUN apt-get -q update && apt-get install -qy \
+  supervisor \
+  build-essential \
+  libavahi-compat-libdnssd-dev \
+  libasound2-dev \
+  git
+RUN npm install -g airsonos
+RUN /build/cleanup.sh
 
 # Use baseimage-docker's init system
-CMD ["/sbin/my_init"]
 
 EXPOSE 5000 5001 5002 5003 5004 5005 5006 5006 5007 5008 5009 5010 5011 5012 5013 5014 5015
 
-ADD init/ /etc/my_init.d/
-ADD services/ /etc/service/
-
+CMD ["/usr/bin/supervisord"]

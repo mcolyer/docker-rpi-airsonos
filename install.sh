@@ -20,4 +20,3 @@ mkdir -p /var/log/supervisor
 #sed -i -e "s#\#enable-dbus=yes#enable-dbus=false#g" /etc/avahi/avahi-daemon.conf
 #sed -i -e "s/^rlimit-nproc/#rlimit-nproc/g" /etc/avahi/avahi-daemon.conf
 
-npm install -g airsonos

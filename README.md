@@ -1,5 +1,5 @@
 # Summary
-This is a Docker container for AirSonos on Raspberry Pi (tested with 2 Model B).
+A Docker image for AirSonos on Raspberry Pi (tested with 2 Model B).
 
 AirSonos exposes Sonos as an AirPlay endpoint.  To learn more about AirSonos, [read the author's blog about it](https://medium.com/@stephencwan/hacking-airplay-into-sonos-93a41a1fcfbb).
 

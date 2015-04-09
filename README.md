@@ -7,7 +7,7 @@ AirSonos exposes Sonos as an AirPlay endpoint.  To learn more about AirSonos, [r
 This image is heavily inspired by [justintime/airsonos](https://github.com/justintime/docker-airsonos).
 Differences in this image are: 
 - hypriot/rpi-node:0.10.36 image as base
-- supervisord instead of phusion/baseimage.
+- supervisord instead of init mechanism from phusion/baseimage.
 
 #  Running the airsonos container
 ``` bash

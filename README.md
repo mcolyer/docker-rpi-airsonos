@@ -9,7 +9,10 @@ Differences in this image are:
 - hypriot/rpi-node:0.10.36 image as base
 - supervisord instead of init mechanism from phusion/baseimage.
 
-#  Running the airsonos container
+# Intallation
+
+1. Install Docker on you Raspberry Pi (e.g. [http://blog.hypriot.com])
+2. Run the container:
 ``` bash
 sudo docker run -d --restart=always --net="host" --name="airsonos" \
   -p 5000-5050:5000-5050/tcp marcelst/airsonos

@@ -11,11 +11,11 @@ Differences in this image are:
 
 # Intallation
 
-1. Install Docker on you Raspberry Pi (e.g. [http://blog.hypriot.com])
+1. Install Docker on you Raspberry Pi (e.g. http://blog.hypriot.com)
 2. Run the container:
 ``` bash
 sudo docker run -d --restart=always --net="host" --name="airsonos" \
-  -p 5000-5050:5000-5050/tcp marcelst/airsonos
+  -p 5000-5050:5000-5050/tcp marcelst/airsonos-pi
 ```
 
 ## Notes on running the container

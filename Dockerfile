@@ -23,6 +23,8 @@ ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 RUN git clone https://github.com/justintime/airsonos && cd airsonos && export USER=root && npm install -g --unsafe-perm
 
+RUN chmod +x /build/dbus.sh
+
 EXPOSE 5000 5001 5002 5003 5004 5005 5006 5006 5007 5008 5009 5010 5011 5012 5013 5014 5015
 
 CMD ["/usr/bin/supervisord"]
